@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		8B1070892C5E7E7800D99ABF /* SearchDebounceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1070882C5E7E7800D99ABF /* SearchDebounceApp.swift */; };
-		8B10708B2C5E7E7800D99ABF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B10708A2C5E7E7800D99ABF /* ContentView.swift */; };
 		8B10708D2C5E7E7900D99ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B10708C2C5E7E7900D99ABF /* Assets.xcassets */; };
 		8B1070912C5E7E7900D99ABF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1070902C5E7E7900D99ABF /* Preview Assets.xcassets */; };
+		8B10709A2C5E7F1B00D99ABF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1070972C5E7F1B00D99ABF /* ViewModel.swift */; };
+		8B10709C2C5E7F1B00D99ABF /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1070992C5E7F1B00D99ABF /* ViewState.swift */; };
+		8B10709F2C5E7F2B00D99ABF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B10709D2C5E7F2B00D99ABF /* ContentView.swift */; };
+		8B1070A02C5E7F2B00D99ABF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B10709E2C5E7F2B00D99ABF /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B1070852C5E7E7800D99ABF /* SearchDebounce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchDebounce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1070882C5E7E7800D99ABF /* SearchDebounceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDebounceApp.swift; sourceTree = "<group>"; };
-		8B10708A2C5E7E7800D99ABF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B10708C2C5E7E7900D99ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B10708E2C5E7E7900D99ABF /* SearchDebounce.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SearchDebounce.entitlements; sourceTree = "<group>"; };
 		8B1070902C5E7E7900D99ABF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B1070972C5E7F1B00D99ABF /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8B1070992C5E7F1B00D99ABF /* ViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		8B10709D2C5E7F2B00D99ABF /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8B10709E2C5E7F2B00D99ABF /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				8B1070882C5E7E7800D99ABF /* SearchDebounceApp.swift */,
-				8B10708A2C5E7E7800D99ABF /* ContentView.swift */,
+				8B10709E2C5E7F2B00D99ABF /* API.swift */,
+				8B10709D2C5E7F2B00D99ABF /* ContentView.swift */,
+				8B1070972C5E7F1B00D99ABF /* ViewModel.swift */,
+				8B1070992C5E7F1B00D99ABF /* ViewState.swift */,
 				8B10708C2C5E7E7900D99ABF /* Assets.xcassets */,
 				8B10708E2C5E7E7900D99ABF /* SearchDebounce.entitlements */,
 				8B10708F2C5E7E7900D99ABF /* Preview Content */,
@@ -139,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B10708B2C5E7E7800D99ABF /* ContentView.swift in Sources */,
+				8B10709A2C5E7F1B00D99ABF /* ViewModel.swift in Sources */,
+				8B10709F2C5E7F2B00D99ABF /* ContentView.swift in Sources */,
+				8B10709C2C5E7F1B00D99ABF /* ViewState.swift in Sources */,
+				8B1070A02C5E7F2B00D99ABF /* API.swift in Sources */,
 				8B1070892C5E7E7800D99ABF /* SearchDebounceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SearchDebounce/SearchDebounce.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SearchDebounce/Preview Content\"";
@@ -305,6 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SearchDebounce/SearchDebounce.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SearchDebounce/Preview Content\"";
