@@ -1,4 +1,4 @@
-Code for the first episode of XCA ByteCast, which a series of of bite-sized tips and tricks  that can be implemented into any project
+Code for the [first episode of XCA ByteCast](https://youtu.be/jfpNfABEnys), which a series of of bite-sized tips and tricks  that can be implemented into any project
 Implementation search from remote API using Combine debounce with observable macro in SwiftUI
 
 ## Geting Started
